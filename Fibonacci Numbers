@@ -1,0 +1,10 @@
+def feb(n):
+    if(n<2):
+        return n
+    else:
+        return (feb(n-1)+feb(n-2))
+n=int(input("Enter the no of Febonacci Numbers to be printed :"))
+i=0
+while i<n:
+    print(feb(i),end=" ")
+    i+=1
